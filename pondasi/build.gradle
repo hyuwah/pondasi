@@ -45,58 +45,58 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation "androidx.viewpager2:viewpager2:1.1.0-alpha01"
     implementation "androidx.recyclerview:recyclerview:1.2.0-beta01"
-    implementation "androidx.fragment:fragment-ktx:1.2.5"
-    implementation "androidx.activity:activity-ktx:1.1.0"
-    implementation 'androidx.core:core-ktx:1.5.0-beta01'
+    api "androidx.fragment:fragment-ktx:1.2.5"
+    api "androidx.activity:activity-ktx:1.1.0"
+    api 'androidx.core:core-ktx:1.5.0-beta01'
 
     /**
      * Jetpack
      */
     // Lifecycle
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-service:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-service:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-process:$lifecycle_version"
 
     /**
      * Dependency Injection / Service Locator
      */
-    implementation "org.koin:koin-android:$koin_version"
-    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+    api "org.koin:koin-android:$koin_version"
+    api "org.koin:koin-androidx-viewmodel:$koin_version"
 
     /**
      * Networking
      */
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
 
-    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0'
+    api 'com.squareup.okhttp3:okhttp:4.4.0'
+    api 'com.squareup.okhttp3:logging-interceptor:4.4.0'
 
     /**
      * Image Loader & Camera
      */
-    implementation "io.coil-kt:coil:1.0.0"
+    api "io.coil-kt:coil:1.0.0"
 
     /**
      * Misc QoL
      */
-    implementation "com.github.skydoves:only:1.0.8"
-    implementation 'com.kirich1409.viewbindingpropertydelegate:viewbindingpropertydelegate:1.4.1'
+    api "com.github.skydoves:only:1.0.8"
+    api 'com.kirich1409.viewbindingpropertydelegate:viewbindingpropertydelegate:1.4.1'
 
     /**
      * Utilities, Dev & Debugging
      */
-    implementation 'dev.marcelpinto.permissions:permissions-ktx:0.5'
-    implementation 'com.facebook.stetho:stetho:1.5.1'
-    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
-    implementation 'com.jakewharton.timber:timber:4.7.1'
+    api 'dev.marcelpinto.permissions:permissions-ktx:0.5'
+    api 'com.facebook.stetho:stetho:1.5.1'
+    api 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+    api 'com.jakewharton.timber:timber:4.7.1'
     // Diagnostic
-    implementation 'com.scottyab:rootbeer-lib:0.0.7'
-    debugImplementation "com.github.chuckerteam.chucker:library:$chucker_version"
-    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:$chucker_version"
+    api 'com.scottyab:rootbeer-lib:0.0.7'
+    debugApi "com.github.chuckerteam.chucker:library:$chucker_version"
+    releaseApi "com.github.chuckerteam.chucker:library-no-op:$chucker_version"
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
