@@ -7,7 +7,7 @@ import dev.hyuwah.pondasi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
-    private val vb by viewBinding<ActivityMainBinding>()
+    private val vb by viewBinding(ActivityMainBinding::bind)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
